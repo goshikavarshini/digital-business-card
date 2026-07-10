@@ -64,3 +64,27 @@ imageUpload.addEventListener("change", function () {
     }
 
 });
+
+// Social Media Inputs
+const linkedinInput = document.getElementById("linkedin");
+const githubInput = document.getElementById("github");
+const instagramInput = document.getElementById("instagram");
+
+const cardLinkedin = document.getElementById("cardLinkedin");
+const cardGithub = document.getElementById("cardGithub");
+const cardInstagram = document.getElementById("cardInstagram");
+
+// LinkedIn
+linkedinInput.addEventListener("input", function () {
+    cardLinkedin.textContent = linkedinInput.value || "LinkedIn";
+});
+
+// GitHub
+githubInput.addEventListener("input", function () {
+    cardGithub.textContent = githubInput.value || "GitHub";
+});
+
+// Instagram
+instagramInput.addEventListener("input", function () {
+    cardInstagram.textContent = instagramInput.value || "Instagram";
+});
