@@ -19,3 +19,10 @@ A web application that allows users to create a digital business card by enterin
 - GitHub
 - html2canvas
 - jsPDF
+
+## How to Run
+- Download or clone the repository.
+- Open the project folder in Visual Studio Code.
+- Install the Live Server extension (recommended).
+- Right-click index.html and select Open with Live Server.
+- Fill in the form, upload a profile image, choose a template, and use the download buttons to save the business card as a PNG or PDF.
