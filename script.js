@@ -1,1 +1,1 @@
-console.log("Digital Business Card Generator");
+console.log("Business Card Generator");
