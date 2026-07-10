@@ -43,3 +43,24 @@ phoneInput.addEventListener("input", function () {
 websiteInput.addEventListener("input", function () {
     cardWebsite.textContent = websiteInput.value || "Website";
 });
+
+// Profile Image Upload
+const imageUpload = document.getElementById("imageUpload");
+const profileImage = document.getElementById("profileImage");
+
+imageUpload.addEventListener("change", function () {
+
+    const file = imageUpload.files[0];
+
+    if (file) {
+
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            profileImage.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+});
